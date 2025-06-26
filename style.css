@@ -12,10 +12,10 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: 
-    radial-gradient(circle at 25% 25%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
-    radial-gradient(circle at 75% 75%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
-    linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  background:
+          radial-gradient(circle at 25% 25%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+          radial-gradient(circle at 75% 75%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+          linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
   background-size: 100% 100%;
   animation: gradientShift 8s ease-in-out infinite;
   overflow: hidden;
@@ -29,24 +29,24 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
-    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.2) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(255, 165, 0, 0.2) 0%, transparent 50%);
+  background:
+          radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.2) 0%, transparent 50%),
+          radial-gradient(circle at 80% 20%, rgba(255, 165, 0, 0.2) 0%, transparent 50%);
   animation: floatingOrbs 12s ease-in-out infinite;
   pointer-events: none;
 }
 
 @keyframes gradientShift {
-  0%, 100% { 
+  0%, 100% {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
   }
-  25% { 
+  25% {
     background: linear-gradient(135deg, #4facfe 0%, #00f2fe 50%, #667eea 100%);
   }
-  50% { 
+  50% {
     background: linear-gradient(135deg, #a8edea 0%, #fed6e3 50%, #d299c2 100%);
   }
-  75% { 
+  75% {
     background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 50%, #667eea 100%);
   }
 }
@@ -68,10 +68,10 @@ body::before {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(20px);
   padding: 40px;
-  box-shadow: 
-    0 32px 64px rgba(0, 0, 0, 0.12),
-    0 16px 32px rgba(0, 0, 0, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  box-shadow:
+          0 32px 64px rgba(0, 0, 0, 0.12),
+          0 16px 32px rgba(0, 0, 0, 0.08),
+          inset 0 1px 0 rgba(255, 255, 255, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.2);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform: translateY(0);
@@ -92,10 +92,10 @@ body::before {
 
 .wrapper:hover {
   transform: translateY(-8px);
-  box-shadow: 
-    0 40px 80px rgba(0, 0, 0, 0.15),
-    0 20px 40px rgba(0, 0, 0, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  box-shadow:
+          0 40px 80px rgba(0, 0, 0, 0.15),
+          0 20px 40px rgba(0, 0, 0, 0.1),
+          inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 .wrapper:hover::before {
@@ -156,9 +156,9 @@ body::before {
   border: 2px solid #667eea;
   background: rgba(255, 255, 255, 0.95);
   transform: scale(1.02);
-  box-shadow: 
-    0 8px 32px rgba(102, 126, 234, 0.15),
-    0 0 0 4px rgba(102, 126, 234, 0.1);
+  box-shadow:
+          0 8px 32px rgba(102, 126, 234, 0.15),
+          0 0 0 4px rgba(102, 126, 234, 0.1);
 }
 
 .search input::placeholder {
@@ -383,11 +383,11 @@ ul .content::-webkit-scrollbar-thumb:hover {
     margin: 20px;
     padding: 30px 24px;
   }
-  
+
   .wrapper header {
     font-size: 28px;
   }
-  
+
   .search input {
     height: 54px;
     padding: 0 50px 0 48px;
